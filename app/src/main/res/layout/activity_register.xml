@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.RegisterActivity"
+    android:background="@color/black"
+    android:padding="20dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageicon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/piersoniconone"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="16sp"
+        android:id="@+id/text1"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:background="@color/black"
+        android:layout_below="@id/imageicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CigarDash"
+        android:layout_centerInParent="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@id/text2"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:background="@color/black"
+        android:layout_below="@id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Cigars- If we wouldn't smoke it, we don't sell it."
+        android:layout_centerInParent="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:textColor="@color/gen_white"
+        android:textSize="12sp"
+        android:id="@+id/text3"
+        android:textStyle="italic"
+        android:text="The World First Cigar Delivery App"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Full Name"
+            android:paddingLeft="10dp"
+            android:drawablePadding="5dp"
+            android:background="@drawable/edit_round"
+            android:layout_centerInParent="true"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Email"
+            android:drawablePadding="5dp"
+            android:id="@+id/email"
+            android:background="@drawable/edit_round"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint = "MobileNumber"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/edit_round"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="5dp"
+            android:inputType="number"
+            android:textSize="16sp" />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:drawablePadding="5dp"
+            android:id="@+id/password"
+            android:background="@drawable/edit_round"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:paddingLeft="15dp"
+            android:hint="Re Enter Password"
+            android:inputType="textPassword"
+            android:drawablePadding="5dp"
+            android:id="@+id/password1"
+            android:background="@drawable/edit_round"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:drawableLeft="@drawable/ic_date_range_black_24dp"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="DOB"
+            android:id="@+id/dob"
+            android:background="@drawable/edit_round"
+            android:textSize="16sp"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="20dp"
+            android:focusable="false" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textSize="18sp"
+            android:background="@drawable/corner_rounded"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/black"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="9dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Become A Driver"
+                android:onClick="BecomeADriver"
+                android:background="@drawable/corner_rounded"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:onClick="BecomeAPartner"
+                android:text="Become A Partner"
+                android:background="@drawable/corner_rounded"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

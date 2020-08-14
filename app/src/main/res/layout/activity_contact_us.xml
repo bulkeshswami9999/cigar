@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextAppearance="@style/yourstyle"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/piersoniconone"
+        android:background="@color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="5dp"
+        android:text="925 Providence Road, #15, Secane, PA 19018\n\ninfo@piersongeofferys.com\n\n(610) 622-1149"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:drawableLeft="@drawable/ic_user_black"
+        android:textSize="10sp"
+        android:padding="7dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_round"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="5dp"
+        android:hint="Contact Name"
+        android:inputType="textPersonName"
+        android:id="@+id/personname"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:textSize="16sp"
+        android:padding="7dp"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/edit_round"
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:textSize="16sp"
+        android:padding="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/edit_round"
+        android:id="@+id/emailadress"
+        android:drawablePadding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:textSize="16sp"
+        android:padding="7dp"
+        android:layout_marginTop="20sp"
+        android:background="#FFFFFF"
+        android:id="@+id/comments"
+        android:gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textAlignment="viewStart"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Comments or questions"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:padding="7dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/corner_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="16sp"
+        />
+</LinearLayout>
